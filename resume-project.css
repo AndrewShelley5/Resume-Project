@@ -1,0 +1,26 @@
+.bodyClass{
+    margin: 0;
+}
+
+.header{
+    background-color: #007991;
+    height: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.headerText{
+    color: #BFB6BB;
+}
+
+.button{
+    border-radius: 1rem;
+    height: 70%;
+    display:flex;
+    align-self: center;
+    color: #BFB6BB;
+    background-color: #0F0326;
+    align-items: center;
+    border-width: .2rem;
+}

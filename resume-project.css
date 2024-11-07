@@ -1,5 +1,11 @@
-.bodyClass{
+.bodyClassMainPage{
     margin: 0;
+    background-color: #61E294;
+}
+
+.bodyClassResumePage{
+    margin: 0;
+    background-color: #61E294;
 }
 
 .header{
@@ -7,11 +13,13 @@
     height: 4%;
     width: 100%;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .headerText{
     color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
 }
 
 .button{
@@ -23,4 +31,147 @@
     background-color: #0F0326;
     align-items: center;
     border-width: .2rem;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.returnButton{
+    border-radius: 1rem;
+    height: 70%;
+    display:flex;
+    align-self: center;
+    color: #BFB6BB;
+    background-color: #0F0326;
+    align-items: center;
+    border-width: .2rem;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.resumePageHeader{
+    background-color: #007991;
+    height: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resumePageHeaderText{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.pictureContainer{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pictureOfMe{
+    width:10%;
+    height:10%;
+    display: flex;
+    border-radius:100%
+}
+
+.Info{
+    border-height: 50%;
+    border-width: 50%;
+    background-color: #007991;
+    padding: .012rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.workHistoryText{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.workHistoryTextPoints{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.educationText{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.educationTextPoints{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.skillsText{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.skillsTextPoints{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.about{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.aboutText{
+    padding-left: 2.5rem;
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.contact{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.contactText{
+    padding-left: 2.5rem;
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.social{
+    border-height: 50%;
+    border-width: 50%;
+    background-color: #007991;
+    padding: .012rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 1rem;
+}
+
+.socialText{
+    padding-left: 1rem;
+    color: #0F0326;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.link{
+    padding-left: 2.5rem;
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
 }

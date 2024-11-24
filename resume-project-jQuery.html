@@ -13,18 +13,32 @@
         <div>
             <h1 class="jQueryHeader">These are some examples of jQuery and AJAX</h1>
         </div>
-            
+
+        <div id="myModal" class="MyModal">
+            <form>
+                <lable for="nameInput">Book Name</lable>
+                <input type="Text" id="nameInput" placeholder="Book Name">
+                <lable for="authorName">Author Name</lable>
+                <input type="Text" id="authorName" placeholder="Author Name">
+                <lable for="date">Date</lable>
+                <input type="Text" id="date" placeholder="Month day, Year">
+            </form>
+            <div class="modalButtons">
+            <button onclick="modalClose()">Close</button> <button onclick="addRow()">Submit</button>
+            </div>
+        </div>
         <div class="tableContainer">
         <h2 class="tableDescription">This is a table you can search through</h2>
         <input id="TableSearch" type="text" placeholder="Book info...">
-        <div id="WholeTable">
+        <div>
             
-        <table>
+        <table id="sortTable">
             <thead>
             <tr>
                 <th onclick="sortTable(0)">Book Title</th>
                 <th onclick="sortTable(1)">Author</th>
-                <th>Date Published</th>
+                <th onclick="sortTable(2)">Date Published</th>
+                <th>Remove or Edit</th>
             </tr>
             </thead>
             <tbody id="Table">
@@ -32,20 +46,23 @@
                 <td>Dracula</td>
                 <td>Bram Stoker</td>
                 <td>May 26th, 1897</td>
+                <td><button onclick="remove(0)">Remove</button><button onclick="Edit(0)">Edit</button></td>
             </tr>
             <tr>
                 <td>Run, Rose, Run</td>
                 <td>Dolly Parton and James Patterson</td>
                 <td>March 7, 2022</td>
+                <td><button onclick="remove(1)">Remove</button><button onclick="Edit(1)">Edit</button></td>
             </tr>
             <tr>
                 <td>The City of Ember</td>
                 <td>Jeanne DuPrau</td>
                 <td>May 2003</td>
+                <td><button onclick="remove(2)">Remove</button><button onclick="Edit(2)">Edit</button></td>
             </tr>
             </tbody>
         </table>
-        <button id="addRow"></button>
+        <button onclick="modalPopup()">Add a Row</button>
         </div>
         </div>
     </body>

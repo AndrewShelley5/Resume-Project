@@ -1,11 +1,16 @@
 .bodyClassMainPage{
     margin: 0;
-    background-color: #61E294;
+    background-color: white;
 }
 
 .bodyClassResumePage{
     margin: 0;
-    background-color: #61E294;
+    background-color: white;
+}
+
+.bodyClassJQuearyPage{
+    margin: 0;
+    background-color: white;
 }
 
 .header{
@@ -46,6 +51,19 @@
     border-width: .2rem;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
+}
+
+.jQueryHeader{
+    color: #BFB6BB;
+    background-color: #007991;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    align-self: center;
+    padding: 1%;
+    font-family: "Roboto Slab", serif;
 }
 
 .resumePageHeader{
@@ -174,4 +192,39 @@
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     text-decoration: none;
+}
+
+table {
+  font-family: "Roboto Slab", serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  cursor: pointer;
+}
+
+td, th {
+  border: 1px solid #61E294;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #61E294;
+}
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+.tableContainer{
+    padding: 4%;
+    padding-top: 2%;
+    margin:4%;
+    background-color: #007991;
+}
+
+.tableDescription{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
 }

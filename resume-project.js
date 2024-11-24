@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("#WholeTable");
+  table = document.getElementById("sortTable");
   switching = true;
   dir = "asc";
   while (switching) {
@@ -83,3 +83,89 @@ $(document).ready(function() {
     $("#Table").append(newRow);
   });
 });
+
+function modalPopup(){
+    var modal=document.getElementById("myModal");
+    modal.style.display="block";
+}
+
+function modalClose(){
+    var modal=document.getElementById("myModal");
+    modal.style.display="none";
+}
+
+function addRow(){
+    var table = document.getElementById("Table");
+    var newBookTitle = document.getElementById("nameInput").value;
+    var newBookAuthor = document.getElementById("authorName").value;
+    var newBookDate = document.getElementById("date").value;
+
+    var newRow = document.createElement("tr");
+    var newTitleElement = document.createElement("td");
+    var newAuthorElement = document.createElement("td");
+    var newDateElement = document.createElement("td");
+    var buttonsElement = document.createElement("td");
+    
+    var removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.setAttribute("onclick",`remove(${table.children.length})`);
+    
+    var editButton = document.createElement("button");
+    editButton.textContent = "Edit";
+    editButton.setAttribute("onclick",`Edit(${table.children.length})`);
+    
+    buttonsElement.appendChild(removeButton);
+    buttonsElement.appendChild(editButton);
+
+    newTitleElement.textContent = newBookTitle;
+    newAuthorElement.textContent = newBookAuthor;
+    newDateElement.textContent = newBookDate;
+
+    newRow.appendChild(newTitleElement);
+    newRow.appendChild(newAuthorElement);
+    newRow.appendChild(newDateElement);
+    newRow.appendChild(buttonsElement);
+    
+    document.getElementById("Table").appendChild(newRow);
+
+    document.getElementById("nameInput").value = "";
+    document.getElementById("authorName").value = "";
+    document.getElementById("date").value = "";
+
+    alert("SUCCESS");
+}
+
+function remove(n){
+    var table = document.getElementById("Table");
+    var rowToRemove = table.children[n];
+    rowToRemove.style.display = "none";
+
+    alert("You Successfuly Removed One")
+}
+
+function Edit(n){
+    var table = document.getElementById("Table");
+    var rowToEdit = table.children[n];
+    var titleColumn = rowToEdit.children[0];
+    var authorColumn = rowToEdit.children[1];
+    var dateColumn = rowToEdit.children[2];
+    var buttonsColumn = rowToEdit.children[3];
+    var editButton = buttonsColumn.children[1];
+
+    if(editButton.textContent=="Edit")
+        {
+            titleColumn.contentEditable = true;
+            authorColumn.contentEditable = true;
+            dateColumn.contentEditable = true;
+            editButton.textContent = "Done";
+        }
+    else
+        {
+            titleColumn.contentEditable = false;
+            authorColumn.contentEditable = false;
+            dateColumn.contentEditable = false;
+            editButton.textContent = "Edit";
+
+            alert("You Successfuly Edited!")
+        }
+}

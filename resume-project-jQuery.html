@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jQuery</title>
+        <link rel="stylesheet" href="resume-project.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body class="bodyClassJQuearyPage">
+        <div>
+            <h1 class="jQueryHeader">These are some examples of jQuery and AJAX</h1>
+        </div>
+            
+        <div class="tableContainer">
+        <h2 class="tableDescription">This is a table you can search through</h2>
+        <input id="TableSearch" type="text" placeholder="Book info...">
+        <div id="WholeTable">
+            
+        <table>
+            <thead>
+            <tr>
+                <th onclick="sortTable(0)">Book Title</th>
+                <th onclick="sortTable(1)">Author</th>
+                <th>Date Published</th>
+            </tr>
+            </thead>
+            <tbody id="Table">
+            <tr>
+                <td>Dracula</td>
+                <td>Bram Stoker</td>
+                <td>May 26th, 1897</td>
+            </tr>
+            <tr>
+                <td>Run, Rose, Run</td>
+                <td>Dolly Parton and James Patterson</td>
+                <td>March 7, 2022</td>
+            </tr>
+            <tr>
+                <td>The City of Ember</td>
+                <td>Jeanne DuPrau</td>
+                <td>May 2003</td>
+            </tr>
+            </tbody>
+        </table>
+        <button id="addRow"></button>
+        </div>
+        </div>
+    </body>
+    <script src="resume-project.js"></script>
+</html>

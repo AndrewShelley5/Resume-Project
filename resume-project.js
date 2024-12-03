@@ -5,7 +5,10 @@ $(document).ready(function(){
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+
+  });
 });
+
 
 
 function sortTable(n) {
@@ -66,7 +69,7 @@ const elementButton3 = document.getElementById("Button3");
 
 elementButton3.style.cursor = "pointer";
 elementButton3.addEventListener("click", function(){
-    window.location.href = "https://www.w3schools.com/jsref/jsref_link.asp";
+    window.location.href = "resume-projet-experiments.html";
 });
 
 
@@ -74,7 +77,7 @@ const elementButton4 = document.getElementById("Button4");
 
 elementButton4.style.cursor = "pointer";
 elementButton4.addEventListener("click", function(){
-    window.location.href = "https://www.w3schools.com/jsref/jsref_link.asp";
+    window.location.href = "resume-project.html";
 });
 
 $(document).ready(function() {

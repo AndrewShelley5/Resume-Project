@@ -13,6 +13,11 @@
     background-color: white;
 }
 
+.bodyClassExperimentPage{
+    margin: 0;
+    backgorund-color: white;
+}
+
 .header{
     background-color: #007991;
     height: 4%;
@@ -253,4 +258,23 @@ button{
 
 #myModal{
     display: none;
+}
+
+.mapHolder{
+    padding: 4%;
+    padding-top: 2%;
+    margin:4%;
+    background-color: #007991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mapText{
+    color: #BFB6BB;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    padding-left: 2.5rem;
+    
 }
